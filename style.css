@@ -8,7 +8,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .bg-video {
@@ -22,33 +22,32 @@ html {
   z-index: -2;
 }
 
-.headerBar {
+.hBar {
   position: relative;
   height: 100%;
   width: 100%;
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+.flexHBar,
+.flexHBar > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1f2937;
-  color: white;
 }
 
-.navLinks {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 120px;
-  padding-right: 60px;
-}
 .navLinks > div {
   margin: 20px;
   padding: 10px;
-  border: solid;
 }
 
-.headerLogo {
-  margin-left: 120px;
-  color: #f9faf8;
-  font-size: 40px;
+.hLogo {
+  font-size: 24px;
   font-weight: bold;
-  padding-right: 60px;
+}
+
+.hmargin > div {
+  margin: 0 120px 0 60px;
+  padding: 0 60px;
 }
