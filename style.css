@@ -8,7 +8,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .bg-video {
@@ -27,8 +27,28 @@ html {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: #1f2937;
   color: white;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 120px;
+  padding-right: 60px;
+}
+.navLinks > div {
+  margin: 20px;
+  padding: 10px;
+  border: solid;
+}
+
+.headerLogo {
+  margin-left: 120px;
+  color: #f9faf8;
+  font-size: 40px;
+  font-weight: bold;
+  padding-right: 60px;
 }
