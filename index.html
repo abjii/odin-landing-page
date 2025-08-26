@@ -7,39 +7,41 @@
     <title>Document</title>
   </head>
   <body>
-    <div>
-      <video autoplay muted loop class="bg-video">
-        <source src="resources/night_stars.mp4" type="video/mp4" />
-      </video>
-      <audio
-        id="backgroundMusic"
-        class="bgm"
-        src="resources/.mp3"
-        loop=""
-      ></audio>
-    </div>
-    <div class="hBar flexHBar hmargin">
-      <div class="hLogo">Header Logo</div>
-      <div class="navLinks">
-        <div>header link1</div>
-        <div>header link2</div>
-        <div>header link3</div>
-      </div>
-    </div>
-    <div>
-      <p>part 1</p>
-    </div>
-    <div>
-      <p>PART 2</p>
-    </div>
-    <div>
-      <p>part 3</p>
-    </div>
-    <div>
-      <p>part 4</p>
-    </div>
-    <div class="headerBar">
-      <p>footer</p>
+    <!-- Background video -->
+    <video autoplay muted loop class="bg-video">
+      <source src="resources/night_stars.mp4" type="video/mp4" />
+    </video>
+    <audio
+      id="backgroundMusic"
+      class="bgm"
+      src="resources/.mp3"
+      loop=""
+    ></audio>
+
+    <!-- Page wrapper (everything above the video) -->
+    <div class="page">
+      <header class="bar header">
+        <div class="logo">Header Logo</div>
+        <nav class="nav">
+          <a href="#">About</a>
+          <a href="#">FAQ</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+
+      <main class="content">
+        <p>Part 1</p>
+        <p>Part 2</p>
+        <p>Part 3</p>
+        <p>Part 4</p>
+      </main>
+
+      <footer class="bar footer">
+        <p>
+          Copyright © The Odin Project 2025 -- Webpage by ==>
+          <a href="https://github.com/abjii" target="#">abjii</a>
+        </p>
+      </footer>
     </div>
   </body>
 </html>
