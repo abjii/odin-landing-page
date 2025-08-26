@@ -63,6 +63,27 @@ a {
   padding: 2rem;
 }
 
+.layer1-container {
+  background-color: #374151;
+  width: 86%;
+  margin: 5em auto;
+  display: flex;
+  background-color: rgba(31, 41, 55, 0.95);
+  box-shadow: 0 0 0.8em rgb(69, 69, 69);
+  opacity: 95%;
+  border-radius: 1.5em;
+}
+
+.layer1-Lcontainer,
+.layer1-Rcontainer {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #f9faf8;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
 /* Footer */
 .footer {
   text-align: center;
