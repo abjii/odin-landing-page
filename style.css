@@ -16,12 +16,12 @@ body {
 /* Background video */
 .bg-video {
   position: fixed;
-  inset: 0; /* shorthand for top:0; left:0; right:0; bottom:0 */
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: brightness(1.5);
-  z-index: -1; /* stays behind everything else */
+  z-index: -1;
 }
 
 /* Layout wrapper */
@@ -56,58 +56,72 @@ body {
 .nav a {
   margin: 0 1.5rem;
   font-size: 18px;
-}
-
-a {
-  text-decoration: none;
   color: #a3d3b0;
+  text-decoration: none;
 }
 
 .content {
   padding: 2rem;
 }
 
+/* Shared layer container styling */
+.layer1-container,
+.layer2-container,
+.layer3-container,
+.layer4-container {
+  border-radius: 1.5em;
+  box-shadow: 0 0 0.8em rgb(69, 69, 69);
+  opacity: 0.95;
+  margin: 50px auto;
+}
+
 /* Layer 1 */
 .layer1-container {
+  display: flex;
+  flex-wrap: wrap;
   width: 86%;
   margin: 5em auto;
-  display: flex;
   background-color: rgba(31, 41, 55, 0.95);
-  box-shadow: 0 0 0.8em rgb(69, 69, 69);
-  border-radius: 1.5em;
-  opacity: 0.95;
 }
 
 .layer1-Lcontainer,
 .layer1-Rcontainer {
-  width: 50%;
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .layer1-Lcontainer {
+  flex: 1 1 300px; /* flexible, text container grows/shrinks */
   margin: 3em 2em 3em 5em;
 }
 
 .layer1-Rcontainer {
+  flex: 0 0 270px; /* fixed width image container */
   margin: 3em 1em;
 }
 
-.layer1-Lcontainer > div {
-  margin: 15px;
-  padding: 15px;
+.layer1-Rcontainer img {
+  width: 800px; /* fixed image size */
+  height: auto;
 }
-
-h1 {
+.layer1-Lcontainer h1 {
   font-size: 48px;
   font-weight: 900;
+  margin-bottom: 15px;
 }
 
 .layer1-Lcontainer p {
   font-size: 18px;
   line-height: 1.8;
   color: #e5e7eb;
+  margin-bottom: 15px;
+}
+
+.button-wrapper {
+  display: inline-block; /* shrink-wrap the button */
+  margin-top: 15px;
 }
 
 button {
@@ -118,83 +132,94 @@ button {
   border-radius: 0.5em;
   font-size: 18px;
   cursor: pointer;
+  width: auto;
+  display: inline-block;
+}
+
+button:hover {
+  opacity: 0.9;
 }
 
 /* Layer 2 */
-.layer2-container,
-.layer3-container,
-.layer4-container {
+.layer2-container {
   background-color: rgb(177 184 194 / 95%);
-  box-shadow: 0 0 0.8em rgb(69, 69, 69);
-  border-radius: 1.5em;
-  opacity: 0.95;
-}
-
-.layer2-container > div,
-.layer2-photos > div {
-  margin: 0 auto;
   padding: 15px;
   text-align: center;
 }
 
+.layer2-container h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
 .layer2-photos {
-  display: flex;
-  justify-content: space-between;
+  display: flex; /* arrange images in a row */
+  flex-wrap: wrap; /* wrap to next line if screen is too small */
+  justify-content: center; /* center the row */
+}
+
+.layer2-photos div {
+  text-align: center;
+  margin: 10px; /* space between images */
 }
 
 .layer2-photos img {
-  max-width: 100%;
-  height: auto;
+  width: 270px;
+  height: 300px;
   border: 0.2em solid #085cd1;
-  border-radius: 1.5em;
+  border-radius: 0.9em;
   box-shadow: 0 0 0.8em rgb(69, 69, 69);
 }
 
 .layer2-photos p {
+  font-size: 12px;
+  margin-top: 5px;
   color: #1f2937;
-  margin: 10px auto;
-  padding: 10px auto;
   text-align: justify;
 }
 
-.layer3-container,
-.layer4-container {
+/* Layer 3 */
+.layer3-container {
   background-color: #e5e7eb;
   padding: 100px;
-  margin: 50px auto;
-}
-
-.layer3-container > div,
-.layer4-blue-container {
-  width: 60%;
-  margin: 0 auto;
+  width: 75%;
   color: #1f2937;
 }
 
 .layer3-container p {
   font-size: 36px;
   font-style: italic;
-  font-weight: 300;
+  font-weight: 100;
   text-align: justify;
+}
+
+/* Layer 4 */
+.layer4-container {
+  background-color: #e5e7eb;
+  padding: 100px;
 }
 
 .layer4-blue-container {
   width: 75%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #1471f2;
   padding: 50px;
   border-radius: 1em;
-  color: white;
-}
-h2 {
-  font-size: 36px;
-  font-weight: 900;
-  color: #1f2937;
+  color: #fff;
 }
 
-.layer4-blue-container div {
-  margin: 20px;
-  padding: 20px;
-  text-align: justify;
+.cta-title {
+  font-weight: 900;
+}
+
+.cta-subtitle {
+  font-style: italic;
+}
+
+.cta-btn {
+  border: solid 1px #ffffff;
 }

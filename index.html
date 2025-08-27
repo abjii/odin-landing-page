@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
       rel="stylesheet"
     />
-
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Nature Showcase</title>
   </head>
   <body>
     <!-- Background video -->
@@ -17,109 +16,143 @@
       <source src="resources/night_stars.mp4" type="video/mp4" />
     </video>
 
-    <!-- Page wrapper (everything above the video) -->
+    <!-- Page wrapper -->
     <div class="page">
       <header class="bar header">
         <div class="logo">Header Logo</div>
         <nav class="nav">
-          <a href="https://github.com/abjii" target="#">About</a>
-          <a href="https://github.com/abjii" target="#">FAQ</a>
-          <a href="https://github.com/abjii" target="#">Contact</a>
+          <a
+            href="https://github.com/abjii"
+            target="_blank"
+            rel="noopener noreferrer"
+            >About</a
+          >
+          <a
+            href="https://github.com/abjii"
+            target="_blank"
+            rel="noopener noreferrer"
+            >FAQ</a
+          >
+          <a
+            href="https://github.com/abjii"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Contact</a
+          >
         </nav>
       </header>
 
       <main class="content">
-        <div class="layer">
+        <!-- Layer 1 -->
+        <section class="layer">
           <div class="layer1-container">
             <div class="layer1-Lcontainer">
-              <div><h1>Welcome to my website</h1></div>
-              <div>
-                <p>
-                  This website is a serene space where the beauty of the natural
-                  world comes alive through stunning imagery. Explore
-                  breathtaking landscapes, vibrant wildlife, and other delicate
-                  wonders.
-                </p>
+              <h1>Welcome to my website</h1>
+              <p>
+                This website is a serene space where the beauty of the natural
+                world comes alive through stunning imagery. Explore breathtaking
+                landscapes, vibrant wildlife, and other delicate wonders.
+              </p>
+              <div class="button-wrapper">
+                <button>Sign up</button>
               </div>
-              <div><button>Sign up</button></div>
             </div>
             <div class="layer1-Rcontainer">
-              <img src="resources\desert-lake.jpg" alt="eagle-mountain" />
+              <img
+                src="resources/desert-lake.jpg"
+                alt="desert lake with mountains"
+              />
             </div>
           </div>
-        </div>
-        <div class="layer">
+        </section>
+
+        <!-- Layer 2 -->
+        <section class="layer">
           <div class="layer2-container">
-            <div><h2>Some nature photographs</h2></div>
-            <div>
-              <div class="layer2-photos">
-                <div>
-                  <img
-                    src="resources\eagle-mountain.jpg"
-                    alt="eagle-mountain"
-                  />
-                  <p>epic photo of eagle over the mountain</p>
-                </div>
-                <div>
-                  <img src="resources\plains-green.jpg" alt="plains-green" />
-                  <p>green plains in the heart of the mountains</p>
-                </div>
-                <div>
-                  <img src="resources\beach.jpg" alt="beach" />
-                  <p>sandy beach photograph at sunset</p>
-                </div>
-                <div>
-                  <img src="resources\ski-mountain.jpg" alt="ski-mountain" />
-                  <p>beautiful view of ski station on mountain top</p>
-                </div>
-                <div>
-                  <img src="resources\island-castle.jpg" alt="island-castle" />
-                  <p>iconic castle within an island with desert background</p>
-                </div>
-                <div>
-                  <img
-                    src="resources\mountain-green.jpg"
-                    alt="mountain-green"
-                  />
-                  <p>fantastic mountains view from green plains on spring</p>
-                </div>
+            <h2>Some nature photographs</h2>
+            <div class="layer2-photos">
+              <div>
+                <img
+                  src="resources/eagle-mountain.jpg"
+                  alt="eagle flying over mountain"
+                />
+                <p>Epic photo of eagle over the mountain</p>
+              </div>
+              <div>
+                <img
+                  src="resources/plains-green.jpg"
+                  alt="green plains in the mountains"
+                />
+                <p>Green plains in the heart of the mountains</p>
+              </div>
+              <div>
+                <img src="resources/beach.jpg" alt="sandy beach at sunset" />
+                <p>Sandy beach photograph at sunset</p>
+              </div>
+              <div>
+                <img
+                  src="resources/ski-mountain.jpg"
+                  alt="ski station on mountain top"
+                />
+                <p>Beautiful view of ski station on mountain top</p>
+              </div>
+              <div>
+                <img
+                  src="resources/island-castle.jpg"
+                  alt="castle on island with desert background"
+                />
+                <p>Iconic castle within an island with desert background</p>
+              </div>
+              <div>
+                <img
+                  src="resources/mountain-green.jpg"
+                  alt="green plains with mountain backdrop"
+                />
+                <p>Fantastic mountains view from green plains on spring</p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="layer">
+        </section>
+
+        <!-- Layer 3 -->
+        <section class="layer">
           <div class="layer3-container">
-            <div>
-              <p>
-                With each small step forward you draw closer, for though doubt
-                and devils whisper, faith and courage speak louder and in the
-                quiet you embrace, the more you are able to hear.
-              </p>
-            </div>
+            <p>
+              With each small step forward you draw closer, for though doubt and
+              devils whisper, faith and courage speak louder and in the quiet
+              you embrace, the more you are able to hear.
+            </p>
           </div>
-        </div>
-        <div class="layer">
+        </section>
+
+        <!-- Layer 4 -->
+        <section class="layer">
           <div class="layer4-container">
             <div class="layer4-blue-container">
               <div class="layer4-Lcontainer">
-                <p style="font-weight: 900">Call to action! It's time!</p>
-                <p style="font: italic">
+                <p class="cta-title">Call to action! It's time!</p>
+                <p class="cta-subtitle">
                   Sign up for our product by clicking that button right over
                   there!
                 </p>
               </div>
               <div class="layer4-Rcontainer">
-                <button style="border: solid 1px #ffffff">Sign up</button>
+                <button class="cta-btn">Sign up</button>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </main>
 
       <footer class="bar footer">
         <p>
-          Copyright © The Odin Project 2025 -- Webpage by ==>
-          <a href="https://github.com/abjii" target="#">abjii</a>
+          © The Odin Project 2025 — Webpage by
+          <a
+            href="https://github.com/abjii"
+            target="_blank"
+            rel="noopener noreferrer"
+            >abjii</a
+          >
         </p>
       </footer>
     </div>
