@@ -122,7 +122,8 @@ button {
 
 /* Layer 2 */
 .layer2-container,
-.layer3-container {
+.layer3-container,
+.layer4-container {
   background-color: rgb(177 184 194 / 95%);
   box-shadow: 0 0 0.8em rgb(69, 69, 69);
   border-radius: 1.5em;
@@ -151,15 +152,20 @@ button {
 
 .layer2-photos p {
   color: #1f2937;
+  margin: 10px auto;
+  padding: 10px auto;
+  text-align: justify;
 }
 
-.layer3-container {
+.layer3-container,
+.layer4-container {
   background-color: #e5e7eb;
   padding: 100px;
   margin: 50px auto;
 }
 
-.layer3-container > div {
+.layer3-container > div,
+.layer4-blue-container {
   width: 60%;
   margin: 0 auto;
   color: #1f2937;
@@ -172,8 +178,23 @@ button {
   text-align: justify;
 }
 
+.layer4-blue-container {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1471f2;
+  padding: 50px;
+  border-radius: 1em;
+  color: white;
+}
 h2 {
   font-size: 36px;
   font-weight: 900;
   color: #1f2937;
+}
+
+.layer4-blue-container div {
+  margin: 20px;
+  padding: 20px;
+  text-align: justify;
 }
