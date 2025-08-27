@@ -10,14 +10,13 @@
 html,
 body {
   height: 100%;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 /* Background video */
 .bg-video {
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0; /* shorthand for top:0; left:0; right:0; bottom:0 */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -37,16 +36,20 @@ body {
   padding: 1rem 10rem;
 }
 
-/* Header */
-.header {
+.header,
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.footer {
+  justify-content: center;
+  text-align: center;
+}
+
 .logo {
   font-size: 24px;
-  color: #f9faf8;
   font-weight: bold;
 }
 
@@ -59,39 +62,36 @@ a {
   text-decoration: none;
   color: #a3d3b0;
 }
+
 .content {
   padding: 2rem;
 }
 
+/* Layer 1 */
 .layer1-container {
-  background-color: #374151;
   width: 86%;
   margin: 5em auto;
   display: flex;
   background-color: rgba(31, 41, 55, 0.95);
   box-shadow: 0 0 0.8em rgb(69, 69, 69);
-  opacity: 95%;
   border-radius: 1.5em;
+  opacity: 0.95;
 }
 
 .layer1-Lcontainer,
 .layer1-Rcontainer {
+  width: 50%;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  width: 50%;
 }
 
 .layer1-Lcontainer {
   margin: 3em 2em 3em 5em;
 }
+
 .layer1-Rcontainer {
   margin: 3em 1em;
-  height: 100%;
-}
-
-img {
-  max-height: 100%;
 }
 
 .layer1-Lcontainer > div {
@@ -102,10 +102,9 @@ img {
 h1 {
   font-size: 48px;
   font-weight: 900;
-  color: #f9faf8;
 }
 
-layer1-Lcontainer p {
+.layer1-Lcontainer p {
   font-size: 18px;
   line-height: 1.8;
   color: #e5e7eb;
@@ -113,7 +112,7 @@ layer1-Lcontainer p {
 
 button {
   background-color: #3882f6;
-  color: white;
+  color: #fff;
   border: none;
   padding: 0.8em 1.5em;
   border-radius: 0.5em;
@@ -121,16 +120,13 @@ button {
   cursor: pointer;
 }
 
-.layer2-container {
-  background-color: rgba(255, 255, 255, 0.95);
+/* Layer 2 */
+.layer2-container,
+.layer3-container {
+  background-color: rgb(177 184 194 / 95%);
   box-shadow: 0 0 0.8em rgb(69, 69, 69);
-  opacity: 95%;
   border-radius: 1.5em;
-}
-
-.layer2-photos {
-  display: flex;
-  justify-content: space-between;
+  opacity: 0.95;
 }
 
 .layer2-container > div,
@@ -140,25 +136,44 @@ button {
   text-align: center;
 }
 
+.layer2-photos {
+  display: flex;
+  justify-content: space-between;
+}
+
 .layer2-photos img {
   max-width: 100%;
   height: auto;
-  box-shadow: 0 0 0.8em rgb(69, 69, 69);
+  border: 0.2em solid #085cd1;
   border-radius: 1.5em;
-  border: solid 0.2em #085cd1;
+  box-shadow: 0 0 0.8em rgb(69, 69, 69);
 }
 
 .layer2-photos p {
   color: #1f2937;
 }
 
+.layer3-container {
+  background-color: #e5e7eb;
+  padding: 100px;
+  margin: 50px auto;
+}
+
+.layer3-container > div {
+  width: 60%;
+  margin: 0 auto;
+  color: #1f2937;
+}
+
+.layer3-container p {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  text-align: justify;
+}
+
 h2 {
   font-size: 36px;
   font-weight: 900;
   color: #1f2937;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
 }
